@@ -9,15 +9,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section id="screen-intro" class="screen active">
+
+    <!-- SCREEN: intro - hero -->
+    <section id="screen-intro">
         <div class="hero">
             <!-- baggrundsbillede sættes i CSS -->
             <h1>Er du nem at få på krogen?</h1>
             <p>Tre ud af fire danskere blev forsøgt svindlet via phishing i 2024. Falske mails der ser ægte ud. Beskeder der skaber panik. Links der fører dig derhen, svindlerne vil have dig hen.</p>
             <p>Mange overvurderer deres egne evner til at spotte svindlen — og de kriminelle bliver dygtigere og dygtigere.</p>
-            <p class="hero-spørgsmål">... Ville du opdage det?</p>
+            <p class="hero-spoergsmaal">... Ville du opdage det?</p>
         </div>
     </section>
+    
+    <!-- SCREEN: intro - introduktion -->
+    <section id="screen-introduktion">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>I en digital hverdag som studerende modtager vi konstant e-mails og notifikationer - fra studiet, offentlige myndigheder og hinanden.</h2>
+                <p>I dette scenarie vil du blive præsenteret for en situation, som kunne opstå i din hverdag. Dine valg undervejs har betydning for, hvad der sker.</p>
+                <p>Formålet er ikke at teste dig. Der er ikke rigtige eller forkerte svar, men dine valg vil føre til forskellige konsekvenser, som kan gøre dig klogere på din digitale sikkerhed.</p>
+                <button class="knap-primær" id="btn-start">Start her</button>
+            </div>
+            <div class="telefon-side">
+                <video autoplay loop muted>
+                    <source src="video/notifikationer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN: notifikation -->
+    <section id="screen-notification">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>En notifikation om at du har modtaget en mail fra SU Styrelsen tikker ind. Hvad gør du?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-aaben-mail">→<span class="valg-tekst">Åbn mailen</span></button>
+                    <button class="valg-knap" id="btn-ignorer-notifikation">→<span class="valg-tekst">Ignorer notifikationen</span></button>
+                </div>
+                <p class="laeringstekst">En mail fra en offentlig myndighed kan føles vigtig og når den handler om noget centralt i din hverdag, kan det være svært at vurdere den kritisk i øjeblikket.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/notifikation.png" alt="Notifikation om mail fra SU Styrelsen" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
     
 </body>
 </html>
