@@ -27,7 +27,7 @@
             <div class="tekst-side">
                 <h2>I en digital hverdag som studerende modtager vi konstant e-mails og notifikationer - fra studiet, offentlige myndigheder og hinanden.</h2>
                 <p>I dette scenarie vil du blive præsenteret for en situation, som kunne opstå i din hverdag. Dine valg undervejs har betydning for, hvad der sker.</p>
-                <p>Formålet er ikke at teste dig. Der er ikke rigtige eller forkerte svar, men dine valg vil føre til forskellige konsekvenser, som kan gøre dig klogere på din digitale sikkerhed.</p>
+                <p>Formålet er ikke at teste dig, men at du kan gå på opdagelse og blive endnu bedre til at passe på dig selv digitalt. Dine valg vil nemlig føre til forskellige konsekvenser, som kan gøre dig klogere på din digitale sikkerhed.</p>
                 <button class="knap-primær" id="btn-start">Start her</button>
             </div>
             <div class="telefon-side">
@@ -42,6 +42,7 @@
     <section id="screen-notification">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-notification">←</button>
                 <h2>En notifikation om at du har modtaget en mail fra SU Styrelsen tikker ind. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-aaben-mail">→<span class="valg-tekst">Åbner mailen</span></button>
@@ -59,6 +60,7 @@
     <section id="screen-ignore">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-ignore">←</button>
                 <h2>Du vælger at ignorere notifikationen.</h2>
                 <p class="laeringstekst">At ignorere en mail kan føles som det letteste valg — men du får samtidig ikke den potentielt vigtige besked, og finder heller ikke ud af om den var ægte eller ej.</p>
                 <button class="knap-primær" id="btn-fortsaet">Fortsæt</button>
@@ -73,6 +75,7 @@
     <section id="screen-mail">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-mail">←</button>
                 <h2>Du åbner mailen, hvor der står at din SU er blevet stoppet midlertidigt, fordi de mangler oplysninger fra dig. De beder dig opdatere dine oplysninger via et link. Gør du ikke det, vil din SU stoppes permanent. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-klik-link-mail">→<span class="valg-tekst">Klikker på linket</span></button>
@@ -92,6 +95,7 @@
     <section id="screen-reminder">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-reminder">←</button>
                 <h2>To dage senere modtager du igen en mail fra SU Styrelsen. Denne gang fremgår det i emnefeltet, at din SU vil blive stoppet permanent, hvis du ikke reagerer. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-aaben-reminder">→<span class="valg-tekst">Åbner mailen</span></button>
@@ -109,6 +113,7 @@
     <section id="screen-mail-reminder">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-mail-reminder">←</button>
                 <h2>Efter at have ignoreret mailen i første omgang, vælger du at åbne den nye mail. I mailen står der at din SU er stoppet og at du har 24 timer til at opdatere dine oplysninger - ellers vil din SU blive stoppet permanent. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-klik-link-mail-reminder">→<span class="valg-tekst">Klikker på linket</span></button>
@@ -128,6 +133,7 @@
     <section id="screen-afsenderinformation">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-afsender">←</button>
                 <h2>Du vælger at tjekke afsenderens mail for at vurdere, om den er til at stole på eller ej. Afsenderen af mailen er: no-reply@su-styrelsen.net. Hvad gør du her fra?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-klik-link-afsender">→<span class="valg-tekst">Klikker på linket</span></button>
@@ -146,6 +152,7 @@
     <section id="screen-afsenderinformation-reminder">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-afsender-reminder">←</button>
                 <h2>Du vælger at tjekke afsenderens mail for at vurdere, om den er til at stole på eller ej. Afsenderen af mailen er: no-reply@su-styrelsen.net. Hvad gør du her fra?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-klik-link-afsender-reminder">→<span class="valg-tekst">Klikker på linket</span></button>
@@ -164,6 +171,7 @@
     <section id="screen-fake-site">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-fakesite">←</button>
                 <h2>Du vælger at klikke på linket og lander nu på en hjemmeside med domænet su-styrelsen.net. SU styrelsen logo fremgår og du bliver bedt om at taste dine oplysninger: Navn, e-mail, telefonnummer, adresse og CPR-nummer. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-indtast">→<span class="valg-tekst">Indtaster oplysninger</span></button>
@@ -178,10 +186,11 @@
         </div>
     </section>
 
-    <!-- SCREEN: fake site - reminder variant -->
+    <!-- SCREEN: fake site - reminder variant (kun billede er ændret) -->
     <section id="screen-fake-site-reminder">
         <div class="split-layout">
             <div class="tekst-side">
+                <button class="knap-tilbage" id="btn-tilbage-fakesite-reminder">←</button>
                 <h2>Du vælger at klikke på linket og lander nu på en hjemmeside med domænet su-styrelsen.net. SU styrelsen logo fremgår og du bliver bedt om at taste dine oplysninger: Navn, e-mail, telefonnummer, adresse og CPR-nummer. Hvad gør du?</h2>
                 <div class="valg-liste">
                     <button class="valg-knap" id="btn-indtast-reminder">→<span class="valg-tekst">Indtaster oplysninger</span></button>
