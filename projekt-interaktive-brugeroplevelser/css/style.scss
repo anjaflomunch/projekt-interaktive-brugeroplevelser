@@ -5,3 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: partial.$baggrund;
+    font-family: partial.$font-brodtekst;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: partial.$font-overskrift;
+    color: partial.$blaa;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    color: partial.$blaa;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.split-layout {
+    @include partial.flex($justify: space-between, $align: center);
+    padding: 0 4rem;
+}
+
+.tekst-side {
+    width: 60%;
+}
+
+.telefon-side {
+    width: 40%;
+    @include partial.flex;
+}
