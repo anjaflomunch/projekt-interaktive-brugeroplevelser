@@ -11,7 +11,7 @@
 <body>
 
     <!-- SCREEN: intro - hero -->
-    <section id="screen-intro">
+    <section id="screen-hero">
         <div class="hero">
             <!-- baggrundsbillede sættes i CSS -->
             <h1>Er du nem at få på krogen?</h1>
@@ -22,7 +22,7 @@
     </section>
     
     <!-- SCREEN: intro - introduktion -->
-    <section id="screen-introduktion">
+    <section id="screen-introduction">
         <div class="split-layout">
             <div class="tekst-side">
                 <h2>I en digital hverdag som studerende modtager vi konstant e-mails og notifikationer - fra studiet, offentlige myndigheder og hinanden.</h2>
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <!-- SCREEN: mail - normal variant -->
+    <!-- SCREEN: mail -->
     <section id="screen-mail">
         <div class="split-layout">
             <div class="tekst-side">
@@ -104,6 +104,99 @@
             </div>
         </div>
     </section>
+
+    <!-- SCREEN: mail - reminder variant (h2, billede og læringstekst ændret)-->
+    <section id="screen-mail-reminder">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>Efter at have ignoreret mailen i første omgang, vælger du at åbne den nye mail. I mailen står der at din SU er stoppet og at du har 24 timer til at opdatere dine oplysninger - ellers vil din SU blive stoppet permanent. Hvad gør du?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-klik-link-mail-reminder">→<span class="valg-tekst">Klikker på linket</span></button>
+                    <button class="valg-knap" id="btn-tjek-mail-reminder">→<span class="valg-tekst">Tjekker afsenderen af mailen</span></button>
+                    <button class="valg-knap" id="btn-su-dk-mail-reminder">→<span class="valg-tekst">Åbner browser, går til www.su.dk og logger ind</span></button>
+                    <button class="valg-knap" id="btn-slet-mail-reminder">→<span class="valg-tekst">Vurderer at mailen er falsk eller irrelevant og sletter den</span></button>
+                </div>
+                <p class="laeringstekst">Mailen ser officiel ud og bruger et emne, der hurtigt kan skabe bekymring. Phishing-mails er ofte designet til at ligne rigtige beskeder fra myndigheder eller virksomheder.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/mail-reminder.png" alt="Skærmbillede af en mail på en telefon" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN: afsenderinformation -->
+    <section id="screen-afsenderinformation">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>Du vælger at tjekke afsenderens mail for at vurderer, om den er til at stole på eller ej. Afsenderen af mailen er: no-reply@su-styrelsen.net. Hvad gør du her fra?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-klik-link-afsender">→<span class="valg-tekst">Klikker på linket</span></button>
+                    <button class="valg-knap" id="btn-su-dk-afsender">→<span class="valg-tekst">Åbner browser, går til www.su.dk og logger ind</span></button>
+                    <button class="valg-knap" id="btn-slet-afsender">→<span class="valg-tekst">Vurderer at mailen er falsk eller irrelevant og sletter den</span></button>
+                </div>
+                <p class="laeringstekst">Afsenderens navn kan se officielt ud, men sommetider afslører mailadressen noget andet.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/afsenderinformation.png" alt="Skærmbillede af afsenderdetaljer i en mail" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN: afsenderinformation - reminder variant (kun billede ændret)-->
+    <section id="screen-afsenderinformation-reminder">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>Du vælger at tjekke afsenderens mail for at vurderer, om den er til at stole på eller ej. Afsenderen af mailen er: no-reply@su-styrelsen.net. Hvad gør du her fra?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-klik-link-afsender-reminder">→<span class="valg-tekst">Klikker på linket</span></button>
+                    <button class="valg-knap" id="btn-su-dk-afsender-reminder">→<span class="valg-tekst">Åbner browser, går til www.su.dk og logger ind</span></button>
+                    <button class="valg-knap" id="btn-slet-afsender-reminder">→<span class="valg-tekst">Vurderer at mailen er falsk eller irrelevant og sletter den</span></button>
+                </div>
+                <p class="laeringstekst">Afsenderens navn kan se officielt ud, men sommetider afslører mailadressen noget andet.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/afsenderinformation-reminder.png" alt="Skærmbillede af afsenderdetaljer i en mail" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN: fake site -->
+    <section id="screen-fake-site">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>Du vælger at klikke på linket og lander nu på en hjemmeside med domænet su-styrelsen.net. SU styrelsen logo fremgår og du bliver bedt om at taste dine oplysninger: Navn, e-mail, telefonnummer, adresse og CPR-nummer. Hvad gør du?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-indtast">→<span class="valg-tekst">Indtaster oplysninger</span></button>
+                    <button class="valg-knap" id="btn-su-dk-fakesite">→<span class="valg-tekst">Åbner browser, går til www.su.dk og logger ind</span></button>
+                    <button class="valg-knap" id="btn-luk-fakesite">→<span class="valg-tekst">Vurderer at siden er falsk, lukker den og sletter mailen</span></button>
+                </div>
+                <p class="laeringstekst">Falske hjemmesider kan ligne officielle sider meget præcist. Logo, farver og opsætning kan skabe tillid, selv når siden ikke er ægte.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/fake-site.png" alt="Skærmbillede af en åben hjemmeside på en telefon" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
+    <!-- SCREEN: fake site - reminder variant -->
+    <section id="screen-fake-site-reminder">
+        <div class="split-layout">
+            <div class="tekst-side">
+                <h2>Du vælger at klikke på linket og lander nu på en hjemmeside med domænet su-styrelsen.net. SU styrelsen logo fremgår og du bliver bedt om at taste dine oplysninger: Navn, e-mail, telefonnummer, adresse og CPR-nummer. Hvad gør du?</h2>
+                <div class="valg-liste">
+                    <button class="valg-knap" id="btn-indtast-reminder">→<span class="valg-tekst">Indtaster oplysninger</span></button>
+                    <button class="valg-knap" id="btn-su-dk-fakesite-reminder">→<span class="valg-tekst">Åbner browser, går til www.su.dk og logger ind</span></button>
+                    <button class="valg-knap" id="btn-luk-fakesite-reminder">→<span class="valg-tekst">Vurderer at siden er falsk, lukker den og sletter mailen</span></button>
+                </div>
+                <p class="laeringstekst">Falske hjemmesider kan ligne officielle sider meget præcist. Logo, farver og opsætning kan skabe tillid, selv når siden ikke er ægte.</p>
+            </div>
+            <div class="telefon-side">
+                <img src="img/fake-site-reminder.png" alt="Skærmbillede af en åben hjemmeside på en telefon" class="telefon-mockup">
+            </div>
+        </div>
+    </section>
+
+    
 
 
 
