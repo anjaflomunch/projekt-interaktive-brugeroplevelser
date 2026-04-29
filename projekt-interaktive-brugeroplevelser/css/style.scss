@@ -262,6 +262,14 @@ section {
         padding: 1rem 1rem;
     }
 
+    .valg-knap {
+        flex-shrink: 0;
+    }
+
+    .valg-række {
+        align-items: flex-start;
+     }       
+
     #screen-introduction {
     .split-layout {
         padding-left: 1rem;
