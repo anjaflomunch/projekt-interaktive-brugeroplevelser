@@ -212,12 +212,6 @@ section {
         width: 65%;
     }
 
-    .knap-proev-igen {
-        position: absolute;
-        bottom: 3rem;
-        right: 4rem;
-    }
-
     h2.resultat-overskrift {
         color: partial.$groen;
         font-size: 4.7rem;
@@ -236,6 +230,12 @@ section {
         font-family: partial.$font-overskrift;
         font-size: 1.8rem;
         margin-top: 2.5rem;
+    }
+
+    .knap-proev-igen {
+        position: absolute;
+        bottom: 3rem;
+        right: 4rem;
     }
 }
 
@@ -281,12 +281,6 @@ section {
         align-items: flex-start;
      }       
 
-    #screen-introduction {
-    .split-layout {
-        padding-left: 1rem;
-    }
-}
-
     h1 {
         font-size: 3.2rem;
     }
@@ -319,4 +313,44 @@ section {
             line-height: 1.6;
         }
 
-}}
+    }
+
+    #screen-introduction {
+        .split-layout {
+            padding-left: 1rem;
+        }
+    }
+
+    #screen-good-end .resultat-billede .resultat-tekst,
+    #screen-mid-end-ignore .resultat-billede .resultat-tekst,
+    #screen-mid-end-escape .resultat-billede .resultat-tekst,
+    #screen-bad-end .resultat-billede .resultat-tekst {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .resultat-billede {
+       
+        img {
+            height: 100vh;
+        }
+
+        h2.resultat-overskrift {
+            font-size: 2.8rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .shit-happens {
+            font-size: 1.5rem;
+            margin-top: 1.2rem;
+            line-height: 1.4;
+        }
+    }
+}
