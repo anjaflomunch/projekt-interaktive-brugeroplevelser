@@ -1,5 +1,7 @@
 @use 'partial';
 
+// general styling //
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
     font-family: partial.$font-brodtekst;
 }
 
-img {
+img, video {
     max-width: 100%;
     height: auto;
 }
@@ -26,10 +28,12 @@ h2 {
     font-size: 1.8rem;
     font-family: partial.$font-overskrift;
     color: partial.$blaa;
+    margin-bottom: 1rem;
+
 }
 
 p {
-    color: partial.$blaa;
+    color: partial.$graa;
     font-size: 1.1rem;
     line-height: 1.5;
 }
@@ -40,17 +44,24 @@ section {
 
 .split-layout {
     @include partial.flex($justify: space-between, $align: center);
-    padding: 0 4rem;
+    padding: 4rem 0;
+    gap: 2rem;
 }
 
 .tekst-side {
-    width: 60%;
+    width: 70%;
+    background-color: partial.$groen;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 3rem;
 }
 
 .telefon-side {
-    width: 40%;
+    width: 30%;
     @include partial.flex;
+    padding: 3rem;
 }
+
+// knapper //
 
 .knap-primær {
     @include partial.knap;
@@ -90,6 +101,8 @@ section {
     margin-bottom: 1rem;
 }
 
+// hero sektion //
+
 #screen-hero {
     @include partial.flex($justify: flex-start, $align: flex-end);
     background-image: url(../img/hero.png);
@@ -98,7 +111,7 @@ section {
     
     .hero {
         @include partial.flex($justify: space-between, $align: flex-end);
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 2rem 4rem 1.5rem 4rem;
         width: 100%;
     }
 
@@ -112,13 +125,13 @@ section {
 
     p {
         color: partial.$lys-skrift;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-bottom: 1rem;
     }
 
     .hero-spoergsmaal {
         color: partial.$groen;
         font-family: partial.$font-overskrift;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
