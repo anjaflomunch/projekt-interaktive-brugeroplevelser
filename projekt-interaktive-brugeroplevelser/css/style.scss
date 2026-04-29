@@ -56,3 +56,28 @@ section {
     width: 40%;
     @include partial.flex;
 }
+
+.knap-primær {
+    @include partial.knap;
+    padding: 0.8em 1.5em;
+    font-family: partial.$font-overskrift;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: partial.$spacing-knap;
+}
+
+.valg-knap {
+    @include partial.knap;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: partial.$radius-rund;
+    font-size: 1rem;
+}
+
+.knap-tilbage {
+    @include partial.knap;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: partial.$radius-rund;
+    font-size: 2rem;
+}
