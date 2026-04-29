@@ -204,7 +204,7 @@ section {
         object-fit: cover;
     }
     
-    .resultat-tekst {
+    .resultat-indhold {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -239,10 +239,13 @@ section {
     }
 }
 
-#screen-bad-end {
-    .resultat-tekst {
-        width: 70%;
+#screen-good-end, #screen-bad-end, #screen-mid-end-ignore, #screen-mid-end-escape {
+    .resultat-indhold {
+        width: 100%;
     }
+        .resultat-tekst {
+            width: 65%;
+        }
 }
 
 // mobil styling //
@@ -319,17 +322,6 @@ section {
         .split-layout {
             padding-left: 1rem;
         }
-    }
-
-    #screen-good-end .resultat-billede .resultat-tekst,
-    #screen-mid-end-ignore .resultat-billede .resultat-tekst,
-    #screen-mid-end-escape .resultat-billede .resultat-tekst,
-    #screen-bad-end .resultat-billede .resultat-tekst {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        width: 100%;
-        padding: 2rem;
     }
 
     .resultat-billede {
