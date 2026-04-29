@@ -16,26 +16,21 @@ img {
     height: auto;
 }
 
-h1, h2, h3 {
-    font-family: partial.$font-overskrift;
-    color: partial.$blaa;
-}
-
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: partial.$font-overskrift;
+    color: partial.$groen;
 }
 
 h2 {
     font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.2rem;
+    font-family: partial.$font-overskrift;
+    color: partial.$blaa;
 }
 
 p {
     color: partial.$blaa;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -91,7 +86,39 @@ section {
     height: 3.5rem;
     border-radius: partial.$radius-rund;
     font-size: 2rem;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+#screen-hero {
+    @include partial.flex($justify: flex-start, $align: flex-end);
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    position: relative;
+    
+    .hero {
+        @include partial.flex($justify: space-between, $align: flex-end);
+        padding: 2rem 4rem 2rem 4rem;
+        width: 100%;
+    }
+
+    .hero-tekst {
+        max-width: 60%;
+    }
+    
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: partial.$lys-skrift;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-spoergsmaal {
+        color: partial.$groen;
+        font-family: partial.$font-overskrift;
+        font-size: 2rem;
+    }
 }

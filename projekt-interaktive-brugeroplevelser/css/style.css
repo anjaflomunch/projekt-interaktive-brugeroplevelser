@@ -20,26 +20,21 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
-  font-family: "Impact", sans-serif;
-  color: #143994;
-}
-
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Impact", sans-serif;
+  color: #D0E36F;
 }
 
 h2 {
   font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.2rem;
+  font-family: "Impact", sans-serif;
+  color: #143994;
 }
 
 p {
   color: #143994;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -121,7 +116,38 @@ section {
   height: 3.5rem;
   border-radius: 50%;
   font-size: 2rem;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+#screen-hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  position: relative;
+}
+#screen-hero .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem 4rem 2rem 4rem;
+  width: 100%;
+}
+#screen-hero .hero-tekst {
+  max-width: 60%;
+}
+#screen-hero h1 {
+  margin-bottom: 1rem;
+}
+#screen-hero p {
+  color: #FAF9F3;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#screen-hero .hero-spoergsmaal {
+  color: #D0E36F;
+  font-family: "Impact", sans-serif;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
