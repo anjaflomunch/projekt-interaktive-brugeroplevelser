@@ -19,23 +19,24 @@ img, video {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.7rem;
     font-family: partial.$font-overskrift;
     color: partial.$groen;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: partial.$font-overskrift;
     color: partial.$blaa;
-    margin-bottom: 1rem;
-
+    margin-bottom: 1.5rem;
 }
 
 p {
     color: partial.$graa;
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+
 }
 
 section {
@@ -44,21 +45,21 @@ section {
 
 .split-layout {
     @include partial.flex($justify: space-between, $align: center);
-    padding: 4rem 0;
-    gap: 2rem;
+    gap: 0rem;
+    position: relative;
 }
 
 .tekst-side {
     width: 70%;
     background-color: partial.$groen;
-    border-radius: 0 1.5rem 1.5rem 0;
+    border-radius: 1.5rem;
     padding: 3rem;
 }
 
 .telefon-side {
     width: 30%;
     @include partial.flex;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 // knapper //
@@ -67,7 +68,8 @@ section {
     @include partial.knap;
     padding: 0.8em 1.5em;
     font-family: partial.$font-overskrift;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
     margin-top: partial.$spacing-knap;
 }
@@ -88,6 +90,8 @@ section {
     height: 3.5rem;
     border-radius: partial.$radius-rund;
     font-size: 1.8rem;
+    align-self: flex-start;
+    margin: 0.5rem 1rem 1.5rem 2rem;
 }
 
 .knap-hero {
@@ -111,27 +115,64 @@ section {
     
     .hero {
         @include partial.flex($justify: space-between, $align: flex-end);
-        padding: 2rem 4rem 1.5rem 4rem;
+        padding: 2rem 4rem 2.5rem 4rem;
         width: 100%;
     }
 
     .hero-tekst {
-        max-width: 60%;
+        max-width: 65%;
     }
     
     h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     p {
         color: partial.$lys-skrift;
         font-size: 1.4rem;
-        margin-bottom: 1rem;
+        margin-top: 1.3rem;
+        font-weight: 300;
     }
 
     .hero-spoergsmaal {
         color: partial.$groen;
         font-family: partial.$font-overskrift;
         font-size: 2.5rem;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
     }
+}
+
+// intro sektion //
+
+#screen-introduction {
+    .split-layout {
+        padding-left: 3rem;
+    }
+}
+
+
+// spørgsmål sektioner //
+
+.valg-raekke {
+    @include partial.flex($justify: flex-start, $align: center);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.valg-tekst {
+    font-size: 1.3rem;
+    color: partial.$graa;
+}
+
+.vidste-du-at {
+    font-family: partial.$font-overskrift;
+    color: partial.$blaa;
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.laeringstekst {
+    font-style: italic;
 }

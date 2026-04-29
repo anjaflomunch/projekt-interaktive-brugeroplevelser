@@ -21,22 +21,23 @@ img, video {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.7rem;
   font-family: "Impact", sans-serif;
   color: #D0E36F;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Impact", sans-serif;
   color: #143994;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
   color: #2C2C2C;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 section {
@@ -47,14 +48,14 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 0;
-  gap: 2rem;
+  gap: 0rem;
+  position: relative;
 }
 
 .tekst-side {
   width: 70%;
   background-color: #D0E36F;
-  border-radius: 0 1.5rem 1.5rem 0;
+  border-radius: 1.5rem;
   padding: 3rem;
 }
 
@@ -63,7 +64,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .knap-primær {
@@ -74,7 +75,8 @@ section {
   cursor: pointer;
   padding: 0.8em 1.5em;
   font-family: "Impact", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin-top: 2rem;
 }
@@ -107,6 +109,8 @@ section {
   height: 3.5rem;
   border-radius: 50%;
   font-size: 1.8rem;
+  align-self: flex-start;
+  margin: 0.5rem 1rem 1.5rem 2rem;
 }
 
 .knap-hero {
@@ -138,22 +142,54 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 2rem 4rem 1.5rem 4rem;
+  padding: 2rem 4rem 2.5rem 4rem;
   width: 100%;
 }
 #screen-hero .hero-tekst {
-  max-width: 60%;
+  max-width: 65%;
 }
 #screen-hero h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 #screen-hero p {
   color: #FAF9F3;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-top: 1.3rem;
+  font-weight: 300;
 }
 #screen-hero .hero-spoergsmaal {
   color: #D0E36F;
   font-family: "Impact", sans-serif;
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+#screen-introduction .split-layout {
+  padding-left: 3rem;
+}
+
+.valg-raekke {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.valg-tekst {
+  font-size: 1.3rem;
+  color: #2C2C2C;
+}
+
+.vidste-du-at {
+  font-family: "Impact", sans-serif;
+  color: #143994;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.laeringstekst {
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
