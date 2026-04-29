@@ -266,7 +266,36 @@ section {
     }
 }
 
-    .hero-tekst {
-        max-width: 90%;
+    h1 {
+        font-size: 3.2rem;
     }
-}
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+
+    p {
+        font-size: 1rem;
+    }
+
+    #screen-hero {
+
+        .hero {
+        padding: 2rem;
+        }
+
+        .hero-spoergsmaal {
+        font-size: 1.8rem;
+        }
+
+        .hero-tekst {
+        max-width: 100%;
+        }
+
+        p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        }
+
+}}
