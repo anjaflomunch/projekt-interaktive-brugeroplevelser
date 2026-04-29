@@ -68,16 +68,30 @@ section {
 
 .valg-knap {
     @include partial.knap;
+    @include partial.flex;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: partial.$radius-rund;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .knap-tilbage {
     @include partial.knap;
+    @include partial.flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: partial.$radius-rund;
+    font-size: 1.8rem;
+}
+
+.knap-hero {
+    @include partial.knap;
+    @include partial.flex;
     width: 3.5rem;
     height: 3.5rem;
     border-radius: partial.$radius-rund;
     font-size: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
 }

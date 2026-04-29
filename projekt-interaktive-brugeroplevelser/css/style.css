@@ -84,10 +84,13 @@ section {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .knap-tilbage {
@@ -96,8 +99,29 @@ section {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+
+.knap-hero {
+  background-color: #9771C0;
+  color: #FAF9F3;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
   font-size: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
 }/*# sourceMappingURL=style.css.map */
