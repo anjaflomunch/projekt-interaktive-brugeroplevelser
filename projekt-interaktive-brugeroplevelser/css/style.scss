@@ -242,27 +242,29 @@ section {
     }
 
     .tekst-side {
-        width: 90%;
+        width: 100%;
         border-radius: 1.5rem;
         order: 2;
+        padding: 3rem 2.5rem;
+
     }
 
     .knap-tilbage {
         order: 3;
         margin-top: 2rem;
         margin-bottom: 3rem;
-         align-self: flex-start;
+        align-self: flex-start;
     }
 
     .split-layout {
         flex-direction: column;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
     }
 
     #screen-introduction {
     .split-layout {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 }
 
@@ -271,31 +273,31 @@ section {
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
 
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #screen-hero {
 
         .hero {
-        padding: 2rem;
+            padding: 2rem;
         }
 
         .hero-spoergsmaal {
-        font-size: 1.8rem;
+            font-size: 1.8rem;
         }
 
         .hero-tekst {
-        max-width: 100%;
+            max-width: 80%;
         }
 
         p {
-        font-size: 1.2rem;
-        line-height: 1.6;
+            font-size: 1.2rem;
+            line-height: 1.6;
         }
 
 }}
