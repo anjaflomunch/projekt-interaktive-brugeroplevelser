@@ -108,15 +108,26 @@ section {
 // hero sektion //
 
 #screen-hero {
-    @include partial.flex($justify: flex-start, $align: flex-end);
-    background-image: url(../img/hero.png);
-    background-size: cover;
     position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+
+    }
     
     .hero {
         @include partial.flex($justify: space-between, $align: flex-end);
         padding: 2rem 4rem 2.5rem 4rem;
         width: 100%;
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
     }
 
     .hero-tekst {
