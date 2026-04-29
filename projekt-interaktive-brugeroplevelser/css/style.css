@@ -36,7 +36,7 @@ h2 {
 p {
   color: #2C2C2C;
   font-size: 1.2rem;
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 1rem;
 }
 
@@ -192,4 +192,54 @@ section {
 
 .laeringstekst {
   font-style: italic;
+}
+
+.resultat-billede {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.resultat-billede img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.resultat-billede .resultat-tekst {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3rem;
+  width: 65%;
+}
+.resultat-billede .knap-proev-igen {
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+}
+.resultat-billede h2.resultat-overskrift {
+  color: #D0E36F;
+  font-size: 4.6rem;
+  margin-bottom: 1rem;
+}
+.resultat-billede p {
+  color: #FAF9F3;
+  font-size: 1.4rem;
+  margin-top: 1.3rem;
+  font-weight: 300;
+}
+.resultat-billede .shit-happens {
+  color: #D0E36F;
+  font-family: "Impact", sans-serif;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+}
+
+#screen-bad-end .resultat-tekst {
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */
