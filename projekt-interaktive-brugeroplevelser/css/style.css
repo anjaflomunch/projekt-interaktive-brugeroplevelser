@@ -255,6 +255,10 @@ section {
   width: 65%;
 }
 
+#screen-bad-end .resultat-tekst {
+  width: 68%;
+}
+
 @media (max-width: 768px) {
   .telefon-side {
     display: none;
@@ -307,6 +311,10 @@ section {
   #screen-introduction .split-layout {
     padding-left: 1rem;
   }
+  .resultat-billede {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .resultat-billede img {
     height: 100vh;
   }
@@ -321,5 +329,21 @@ section {
     font-size: 1.5rem;
     margin-top: 1.2rem;
     line-height: 1.4;
+  }
+  .resultat-billede .resultat-indhold {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+  }
+  .resultat-billede .knap-proev-igen {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
+  #screen-good-end .resultat-tekst, #screen-bad-end .resultat-tekst, #screen-mid-end-ignore .resultat-tekst, #screen-mid-end-escape .resultat-tekst {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

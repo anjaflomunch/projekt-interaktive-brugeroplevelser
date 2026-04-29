@@ -248,6 +248,12 @@ section {
         }
 }
 
+#screen-bad-end {
+    .resultat-tekst {
+        width: 68%;
+    }
+}
+
 // mobil styling //
 
 @media (max-width: 768px) {
@@ -325,6 +331,8 @@ section {
     }
 
     .resultat-billede {
+        flex-direction: column;
+        justify-content: flex-end;
        
         img {
             height: 100vh;
@@ -343,6 +351,27 @@ section {
             font-size: 1.5rem;
             margin-top: 1.2rem;
             line-height: 1.4;
+        }
+
+        .resultat-indhold {
+            position: relative;
+            width: 100%;
+            padding: 2rem;
+        }
+
+        .knap-proev-igen {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            z-index: 1;
+        }
+    }
+    
+    #screen-good-end, #screen-bad-end, #screen-mid-end-ignore, #screen-mid-end-escape {
+        .resultat-tekst {
+            width: 100%;
         }
     }
 }
