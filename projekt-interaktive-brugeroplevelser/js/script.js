@@ -12,7 +12,7 @@ sections.forEach(section => {
 
 // Skift mellem screens
 
-const visScreen = (screenId) => {
+const showScreen = (screenId) => {
     // Skjul alle sections
     sections.forEach(section => {
         section.classList.add("hidden");
@@ -24,6 +24,6 @@ const visScreen = (screenId) => {
 // Hero knap
 const btnHero = document.querySelector("#btn-hero");
 btnHero.addEventListener("click", () => {
-    visScreen("screen-introduction");
+    showScreen("screen-introduction");
 });
 
