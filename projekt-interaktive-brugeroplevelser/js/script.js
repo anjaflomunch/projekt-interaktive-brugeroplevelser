@@ -32,3 +32,20 @@ const btnStart = document.querySelector("#btn-start");
 btnStart.addEventListener("click", () => {
     showScreen("screen-notification");
 });
+
+// Notification screen knapper
+const btnOpenMail = document.querySelector("#btn-aaben-mail");
+btnOpenMail.addEventListener("click", () => {
+    showScreen("screen-mail");
+});
+
+const btnIgnoreNotification = document.querySelector("#btn-ignorer-notifikation");
+btnIgnoreNotification.addEventListener("click", () => {
+    showScreen("screen-ignore");
+});
+
+// Tilbage knap - notification
+const btnBackNotification = document.querySelector("#btn-tilbage-notification");
+btnBackNotification.addEventListener("click", () => {
+    showScreen("screen-introduction");
+});
