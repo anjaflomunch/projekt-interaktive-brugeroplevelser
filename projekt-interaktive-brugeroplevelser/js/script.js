@@ -61,3 +61,30 @@ const btnBackIgnore = document.querySelector("#btn-tilbage-ignore");
 btnBackIgnore.addEventListener("click", () => {
     showScreen("screen-notification");
 });
+
+// Mail screen knapper
+const btnClickLink = document.querySelector("#btn-klik-link-mail");
+btnClickLink.addEventListener("click", () => {
+    showScreen("screen-fake-site");
+});
+
+const btnCheckSender = document.querySelector("#btn-tjek-afsender-mail");
+btnCheckSender.addEventListener("click", () => {
+    showScreen("screen-afsenderinformation");
+});
+
+const btnGoToSuDk = document.querySelector("#btn-su-dk-mail");
+btnGoToSuDk.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+const btnDeleteMail = document.querySelector("#btn-slet-mail");
+btnDeleteMail.addEventListener("click", () => {
+    showScreen("screen-mid-end-ignore");
+});
+
+// Tilbage knap - mail
+const btnBackMail = document.querySelector("#btn-tilbage-mail");
+btnBackMail.addEventListener("click", () => {
+    showScreen("screen-notification");
+});
