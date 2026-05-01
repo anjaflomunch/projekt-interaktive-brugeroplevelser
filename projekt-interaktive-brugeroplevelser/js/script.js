@@ -88,3 +88,20 @@ const btnBackMail = document.querySelector("#btn-tilbage-mail");
 btnBackMail.addEventListener("click", () => {
     showScreen("screen-notification");
 });
+
+// Reminder screen knapper
+const btnOpenReminder = document.querySelector("#btn-aaben-reminder");
+btnOpenReminder.addEventListener("click", () => {
+    showScreen("screen-mail-reminder");
+});
+
+const btnIgnoreReminder = document.querySelector("#btn-ignorer-reminder");
+btnIgnoreReminder.addEventListener("click", () => {
+    showScreen("screen-mid-end-ignore");
+});
+
+// Tilbage knap - reminder
+const btnBackReminder = document.querySelector("#btn-tilbage-reminder");
+btnBackReminder.addEventListener("click", () => {
+    showScreen("screen-ignore");
+});
