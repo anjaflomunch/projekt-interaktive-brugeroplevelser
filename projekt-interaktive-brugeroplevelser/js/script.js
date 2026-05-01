@@ -1,16 +1,18 @@
 console.log("JS virker");
 
-// Hent alle sections
+//// Hent alle sections
 const sections = document.querySelectorAll("section");
 
-// Skjul alle sections undtagen hero
+
+//// Skjul alle sections undtagen hero
 sections.forEach(section => {
     if (section.id !== "screen-hero") {
         section.classList.add("hidden");
     }
 });
 
-// Skift mellem screens
+
+//// Skift mellem screens
 
 const showScreen = (screenId) => {
     // Skjul alle sections
@@ -21,7 +23,8 @@ const showScreen = (screenId) => {
     document.querySelector("#" + screenId).classList.remove("hidden");
 };
 
-// Hero knap
+
+//// Hero knap
 const btnHero = document.querySelector("#btn-hero");
 btnHero.addEventListener("click", () => {
     showScreen("screen-introduction");
@@ -33,7 +36,8 @@ btnStart.addEventListener("click", () => {
     showScreen("screen-notification");
 });
 
-// Notification screen knapper
+
+//// Notification screen knapper
 const btnOpenMail = document.querySelector("#btn-aaben-mail");
 btnOpenMail.addEventListener("click", () => {
     showScreen("screen-mail");
@@ -50,7 +54,8 @@ btnBackNotification.addEventListener("click", () => {
     showScreen("screen-introduction");
 });
 
-// Ignore screen knap
+
+//// Ignore screen knap
 const btnContinue = document.querySelector("#btn-fortsaet");
 btnContinue.addEventListener("click", () => {
     showScreen("screen-reminder");
@@ -62,7 +67,8 @@ btnBackIgnore.addEventListener("click", () => {
     showScreen("screen-notification");
 });
 
-// Mail screen knapper
+
+//// Mail screen knapper
 const btnClickLink = document.querySelector("#btn-klik-link-mail");
 btnClickLink.addEventListener("click", () => {
     showScreen("screen-fake-site");
@@ -89,7 +95,8 @@ btnBackMail.addEventListener("click", () => {
     showScreen("screen-notification");
 });
 
-// Reminder screen knapper
+
+//// Reminder screen knapper
 const btnOpenReminder = document.querySelector("#btn-aaben-reminder");
 btnOpenReminder.addEventListener("click", () => {
     showScreen("screen-mail-reminder");
@@ -101,7 +108,82 @@ btnIgnoreReminder.addEventListener("click", () => {
 });
 
 // Tilbage knap - reminder
+
 const btnBackReminder = document.querySelector("#btn-tilbage-reminder");
 btnBackReminder.addEventListener("click", () => {
     showScreen("screen-ignore");
+});
+
+
+//// Mail reminder screen knapper
+
+const btnClickLinkReminder = document.querySelector("#btn-klik-link-mail-reminder");
+btnClickLinkReminder.addEventListener("click", () => {
+    showScreen("screen-fake-site-reminder");
+});
+
+const btnCheckSenderReminder = document.querySelector("#btn-tjek-afsender-mail-reminder");
+btnCheckSenderReminder.addEventListener("click", () => {
+    showScreen("screen-afsenderinformation-reminder");
+});
+
+const btnGoToSuDkReminder = document.querySelector("#btn-su-dk-mail-reminder");
+btnGoToSuDkReminder.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+const btnDeleteMailReminder = document.querySelector("#btn-slet-mail-reminder");
+btnDeleteMailReminder.addEventListener("click", () => {
+    showScreen("screen-mid-end-ignore");
+});
+
+// Tilbage knap - mail
+const btnBackMailReminder = document.querySelector("#btn-tilbage-mail-reminder");
+btnBackMailReminder.addEventListener("click", () => {
+    showScreen("screen-reminder");
+});
+
+
+//// Afsenderinformation screen knapper
+const btnClickLinkSender = document.querySelector("#btn-klik-link-afsender");
+btnClickLinkSender.addEventListener("click", () => {
+    showScreen("screen-fake-site");
+});
+
+const btnGoToSuDkSender = document.querySelector("#btn-su-dk-mail-afsender");
+btnGoToSuDkSender.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+const btnDeleteSender = document.querySelector("#btn-slet-afsender");
+btnDeleteSender.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+// Tilbage knap - afsenderinformation
+const btnBackMailSender = document.querySelector("#btn-tilbage-afsender");
+btnBackMailSender.addEventListener("click", () => {
+    showScreen("screen-mail");
+});
+
+//// Afsenderinformation reminder screen knapper
+const btnClickLinkSenderReminder = document.querySelector("#btn-klik-link-afsender-reminder");
+btnClickLinkSenderReminder.addEventListener("click", () => {
+    showScreen("screen-fake-site-reminder");
+});
+
+const btnGoToSuDkSenderReminder = document.querySelector("#btn-su-dk-mail-afsender-reminder");
+btnGoToSuDkSenderReminder.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+const btnDeleteSenderReminder = document.querySelector("#btn-slet-afsender-reminder");
+btnDeleteSenderReminder.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+// Tilbage knap - afsenderinformation
+const btnBackMailSenderReminder = document.querySelector("#btn-tilbage-afsender-reminder");
+btnBackMailSenderReminder.addEventListener("click", () => {
+    showScreen("screen-mail-reminder");
 });
