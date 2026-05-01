@@ -182,8 +182,52 @@ btnDeleteSenderReminder.addEventListener("click", () => {
     showScreen("screen-good-end");
 });
 
-// Tilbage knap - afsenderinformation
+// Tilbage knap - afsenderinformation reminder
 const btnBackMailSenderReminder = document.querySelector("#btn-tilbage-afsender-reminder");
 btnBackMailSenderReminder.addEventListener("click", () => {
+    showScreen("screen-mail-reminder");
+});
+
+//// Fake site screen knapper
+const btnEnterInfo = document.querySelector("#btn-indtast");
+btnEnterInfo.addEventListener("click", () => {
+    showScreen("screen-bad-end");
+});
+
+const btnGoToSuDkFakesite = document.querySelector("#btn-su-dk-fakesite");
+btnGoToSuDkFakesite.addEventListener("click", () => {
+    showScreen("screen-mid-end-escape");
+});
+
+const btnCloseFakesite = document.querySelector("#btn-luk-fakesite");
+btnCloseFakesite.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+// Tilbage knap - fake site
+const btnBackFakesite = document.querySelector("#btn-tilbage-fakesite");
+btnBackFakesite.addEventListener("click", () => {
+    showScreen("screen-mail");
+});
+
+//// Fake site reminder screen knapper
+const btnEnterInfoReminder = document.querySelector("#btn-indtast-reminder");
+btnEnterInfoReminder.addEventListener("click", () => {
+    showScreen("screen-bad-end");
+});
+
+const btnGoToSuDkFakesiteReminder = document.querySelector("#btn-su-dk-fakesite-reminder");
+btnGoToSuDkFakesiteReminder.addEventListener("click", () => {
+    showScreen("screen-mid-end-escape");
+});
+
+const btnCloseFakesiteReminder = document.querySelector("#btn-luk-fakesite-reminder");
+btnCloseFakesiteReminder.addEventListener("click", () => {
+    showScreen("screen-good-end");
+});
+
+// Tilbage knap - fake site reminder
+const btnBackFakesiteReminder = document.querySelector("#btn-tilbage-fakesite-reminder");
+btnBackFakesiteReminder.addEventListener("click", () => {
     showScreen("screen-mail-reminder");
 });
