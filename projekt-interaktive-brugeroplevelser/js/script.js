@@ -27,7 +27,7 @@ btnHero.addEventListener("click", () => {
     showScreen("screen-introduction");
 });
 
-// Start her knap
+// Introduction knap
 const btnStart = document.querySelector("#btn-start");
 btnStart.addEventListener("click", () => {
     showScreen("screen-notification");
@@ -48,4 +48,16 @@ btnIgnoreNotification.addEventListener("click", () => {
 const btnBackNotification = document.querySelector("#btn-tilbage-notification");
 btnBackNotification.addEventListener("click", () => {
     showScreen("screen-introduction");
+});
+
+// Ignore screen knap
+const btnContinue = document.querySelector("#btn-fortsaet");
+btnContinue.addEventListener("click", () => {
+    showScreen("screen-reminder");
+});
+
+// Tilbage knap - ignore
+const btnBackIgnore = document.querySelector("#btn-tilbage-ignore");
+btnBackIgnore.addEventListener("click", () => {
+    showScreen("screen-notification");
 });
