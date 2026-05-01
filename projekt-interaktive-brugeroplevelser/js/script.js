@@ -166,6 +166,7 @@ btnBackMailSender.addEventListener("click", () => {
     showScreen("screen-mail");
 });
 
+
 //// Afsenderinformation reminder screen knapper
 const btnClickLinkSenderReminder = document.querySelector("#btn-klik-link-afsender-reminder");
 btnClickLinkSenderReminder.addEventListener("click", () => {
@@ -187,6 +188,7 @@ const btnBackMailSenderReminder = document.querySelector("#btn-tilbage-afsender-
 btnBackMailSenderReminder.addEventListener("click", () => {
     showScreen("screen-mail-reminder");
 });
+
 
 //// Fake site screen knapper
 const btnEnterInfo = document.querySelector("#btn-indtast");
@@ -210,6 +212,7 @@ btnBackFakesite.addEventListener("click", () => {
     showScreen("screen-mail");
 });
 
+
 //// Fake site reminder screen knapper
 const btnEnterInfoReminder = document.querySelector("#btn-indtast-reminder");
 btnEnterInfoReminder.addEventListener("click", () => {
@@ -230,4 +233,13 @@ btnCloseFakesiteReminder.addEventListener("click", () => {
 const btnBackFakesiteReminder = document.querySelector("#btn-tilbage-fakesite-reminder");
 btnBackFakesiteReminder.addEventListener("click", () => {
     showScreen("screen-mail-reminder");
+});
+
+
+//// Prøv igen knapper
+const btnsTryAgain = document.querySelectorAll(".knap-proev-igen");
+btnsTryAgain.forEach(btn => {
+    btn.addEventListener("click", () => {
+        showScreen("screen-notification");
+    });
 });
