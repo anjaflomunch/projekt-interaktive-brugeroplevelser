@@ -1,3 +1,5 @@
+console.log("JS virker");
+
 // Hent alle sections
 const sections = document.querySelectorAll("section");
 
@@ -7,3 +9,21 @@ sections.forEach(section => {
         section.classList.add("hidden");
     }
 });
+
+// Skift mellem screens
+
+const visScreen = (screenId) => {
+    // Skjul alle sections
+    sections.forEach(section => {
+        section.classList.add("hidden");
+    });
+    // Vis den ønskede screen
+    document.querySelector("#" + screenId).classList.remove("hidden");
+};
+
+// Hero knap
+const btnHero = document.querySelector("#btn-hero");
+btnHero.addEventListener("click", () => {
+    visScreen("screen-introduction");
+});
+

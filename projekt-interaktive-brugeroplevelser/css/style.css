@@ -346,4 +346,7 @@ section {
   #screen-good-end .resultat-tekst, #screen-bad-end .resultat-tekst, #screen-mid-end-ignore .resultat-tekst, #screen-mid-end-escape .resultat-tekst {
     width: 100%;
   }
+}
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
