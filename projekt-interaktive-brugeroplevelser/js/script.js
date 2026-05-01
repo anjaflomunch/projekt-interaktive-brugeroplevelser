@@ -122,7 +122,7 @@ btnClickLinkReminder.addEventListener("click", () => {
     showScreen("screen-fake-site-reminder");
 });
 
-const btnCheckSenderReminder = document.querySelector("#btn-tjek-afsender-mail-reminder");
+const btnCheckSenderReminder = document.querySelector("#btn-tjek-mail-reminder");
 btnCheckSenderReminder.addEventListener("click", () => {
     showScreen("screen-afsenderinformation-reminder");
 });
@@ -150,7 +150,7 @@ btnClickLinkSender.addEventListener("click", () => {
     showScreen("screen-fake-site");
 });
 
-const btnGoToSuDkSender = document.querySelector("#btn-su-dk-mail-afsender");
+const btnGoToSuDkSender = document.querySelector("#btn-su-dk-afsender");
 btnGoToSuDkSender.addEventListener("click", () => {
     showScreen("screen-good-end");
 });
@@ -173,7 +173,7 @@ btnClickLinkSenderReminder.addEventListener("click", () => {
     showScreen("screen-fake-site-reminder");
 });
 
-const btnGoToSuDkSenderReminder = document.querySelector("#btn-su-dk-mail-afsender-reminder");
+const btnGoToSuDkSenderReminder = document.querySelector("#btn-su-dk-afsender-reminder");
 btnGoToSuDkSenderReminder.addEventListener("click", () => {
     showScreen("screen-good-end");
 });
