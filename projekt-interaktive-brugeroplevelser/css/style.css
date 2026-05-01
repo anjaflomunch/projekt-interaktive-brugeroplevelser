@@ -50,6 +50,7 @@ section {
   align-items: center;
   gap: 0rem;
   position: relative;
+  min-height: 100vh;
 }
 
 .tekst-side {
@@ -110,7 +111,7 @@ section {
   border-radius: 50%;
   font-size: 1.8rem;
   align-self: flex-start;
-  margin: 0.5rem 1rem 1.5rem 2rem;
+  margin: 1.2rem 1rem 1.5rem 2rem;
 }
 
 .knap-hero {
