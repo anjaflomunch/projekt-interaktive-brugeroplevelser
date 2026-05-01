@@ -27,3 +27,8 @@ btnHero.addEventListener("click", () => {
     showScreen("screen-introduction");
 });
 
+// Start her knap
+const btnStart = document.querySelector("#btn-start");
+btnStart.addEventListener("click", () => {
+    showScreen("screen-notification");
+});
