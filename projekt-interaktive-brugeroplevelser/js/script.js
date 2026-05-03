@@ -1,5 +1,24 @@
 console.log("JS virker");
 
+//// Array med alle screen id'er
+const screenIds = [
+    "screen-hero",
+    "screen-introduction",
+    "screen-notification",
+    "screen-ignore",
+    "screen-mail",
+    "screen-reminder",
+    "screen-mail-reminder",
+    "screen-afsenderinformation",
+    "screen-afsenderinformation-reminder",
+    "screen-fake-site",
+    "screen-fake-site-reminder",
+    "screen-good-end",
+    "screen-mid-end-ignore",
+    "screen-mid-end-escape",
+    "screen-bad-end"
+];
+
 //// Hent alle sections
 const sections = document.querySelectorAll("section");
 
@@ -16,8 +35,8 @@ sections.forEach(section => {
 
 const showScreen = (screenId) => {
     // Skjul alle sections
-    sections.forEach(section => {
-        section.classList.add("hidden");
+    screenIds.forEach(id => {
+        document.querySelector("#" + id).classList.add("hidden");
     });
     // Vis den ønskede screen
     document.querySelector("#" + screenId).classList.remove("hidden");
