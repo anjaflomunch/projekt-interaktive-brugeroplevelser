@@ -222,7 +222,7 @@ btnGoToSuDkFakesite.addEventListener("click", () => {
 
 const btnCloseFakesite = document.querySelector("#btn-luk-fakesite");
 btnCloseFakesite.addEventListener("click", () => {
-    showScreen("screen-good-end");
+    showScreen("screen-mid-end-escape");
 });
 
 // Tilbage knap - fake site
@@ -245,7 +245,7 @@ btnGoToSuDkFakesiteReminder.addEventListener("click", () => {
 
 const btnCloseFakesiteReminder = document.querySelector("#btn-luk-fakesite-reminder");
 btnCloseFakesiteReminder.addEventListener("click", () => {
-    showScreen("screen-good-end");
+    showScreen("screen-mid-end-escape");
 });
 
 // Tilbage knap - fake site reminder

@@ -112,6 +112,7 @@ section {
   font-size: 1.8rem;
   align-self: flex-start;
   margin: 1.2rem 1rem 1.5rem 2rem;
+  flex-shrink: 0;
 }
 
 .knap-hero {
@@ -275,6 +276,7 @@ section {
     margin-top: 2rem;
     margin-bottom: 3rem;
     align-self: flex-start;
+    flex-shrink: 0;
   }
   .split-layout {
     flex-direction: column;
