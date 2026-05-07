@@ -298,18 +298,42 @@ section {
   p {
     font-size: 1.2rem;
   }
+  #screen-hero {
+    position: relative;
+  }
+  #screen-hero img {
+    position: absolute;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
   #screen-hero .hero {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
     padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
   }
   #screen-hero .hero-spoergsmaal {
     font-size: 1.8rem;
   }
   #screen-hero .hero-tekst {
-    max-width: 80%;
+    max-width: 100%;
   }
   #screen-hero p {
     font-size: 1.2rem;
     line-height: 1.6;
+  }
+  #screen-hero .knap-hero {
+    flex-shrink: 0;
   }
   #screen-introduction .split-layout {
     padding-left: 1rem;
@@ -319,10 +343,10 @@ section {
     justify-content: flex-end;
   }
   .resultat-billede img {
-    height: 100vh;
+    min-height: 100vh;
   }
   .resultat-billede h2.resultat-overskrift {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
   .resultat-billede p {
     font-size: 1.2rem;
@@ -337,6 +361,7 @@ section {
     position: relative;
     width: 100%;
     padding: 2rem;
+    margin-top: auto;
   }
   .resultat-billede .knap-proev-igen {
     position: relative;
