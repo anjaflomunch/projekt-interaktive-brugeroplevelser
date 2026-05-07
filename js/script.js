@@ -38,8 +38,9 @@ const showScreen = (screenId) => {
     screenIds.forEach(id => {
         document.querySelector("#" + id).classList.add("hidden");
     });
-    // Vis den ønskede screen
+    // Vis den ønskede screen + scroll til top ved screen skift
     document.querySelector("#" + screenId).classList.remove("hidden");
+    window.scrollTo(0, 0);
 };
 
 
