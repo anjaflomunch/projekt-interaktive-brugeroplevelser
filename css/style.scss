@@ -66,7 +66,7 @@ section {
 
 // knapper //
 
-.knap-primær {
+.knap-primaer {
     @include partial.knap;
     padding: 0.8em 1.5em;
     font-family: partial.$font-overskrift;
@@ -268,7 +268,7 @@ section {
         width: 100%;
         border-radius: 1.5rem;
         order: 2;
-        padding: 3rem 2.5rem;
+        padding: 2rem 2rem;
 
     }
 
@@ -299,7 +299,7 @@ section {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
 
@@ -347,12 +347,7 @@ section {
             flex-shrink: 0;
         }
     }
-
-    #screen-introduction {
-        .split-layout {
-            padding-left: 1rem;
-        }
-    }
+e
 
     .resultat-billede {
         flex-direction: column;
@@ -393,6 +388,12 @@ section {
             z-index: 1;
         }
     }
+
+    #screen-introduction {
+        .knap-primaer {
+            margin-top: 0rem;
+        }
+    }    
     
     #screen-good-end, #screen-bad-end, #screen-mid-end-ignore, #screen-mid-end-escape {
         .resultat-tekst {

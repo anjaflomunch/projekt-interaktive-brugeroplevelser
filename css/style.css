@@ -68,7 +68,7 @@ section {
   padding: 2rem;
 }
 
-.knap-primær {
+.knap-primaar {
   background-color: #9771C0;
   color: #FAF9F3;
   border: none;
@@ -269,7 +269,7 @@ section {
     width: 100%;
     border-radius: 1.5rem;
     order: 2;
-    padding: 3rem 2.5rem;
+    padding: 2rem 2rem;
   }
   .knap-tilbage {
     order: 3;
@@ -293,7 +293,7 @@ section {
     font-size: 3.2rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   p {
     font-size: 1.2rem;
@@ -335,41 +335,41 @@ section {
   #screen-hero .knap-hero {
     flex-shrink: 0;
   }
-  #screen-introduction .split-layout {
-    padding-left: 1rem;
-  }
-  .resultat-billede {
+  e .resultat-billede {
     flex-direction: column;
     justify-content: flex-end;
   }
-  .resultat-billede img {
+  e .resultat-billede img {
     min-height: 100vh;
   }
-  .resultat-billede h2.resultat-overskrift {
+  e .resultat-billede h2.resultat-overskrift {
     font-size: 2.2rem;
   }
-  .resultat-billede p {
+  e .resultat-billede p {
     font-size: 1.2rem;
     line-height: 1.6;
   }
-  .resultat-billede .shit-happens {
+  e .resultat-billede .shit-happens {
     font-size: 1.5rem;
     margin-top: 1.2rem;
     line-height: 1.4;
   }
-  .resultat-billede .resultat-indhold {
+  e .resultat-billede .resultat-indhold {
     position: relative;
     width: 100%;
     padding: 2rem;
     margin-top: auto;
   }
-  .resultat-billede .knap-proev-igen {
+  e .resultat-billede .knap-proev-igen {
     position: relative;
     bottom: auto;
     right: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
     z-index: 1;
+  }
+  #screen-introduction .knap-primaer {
+    margin-top: 0rem;
   }
   #screen-good-end .resultat-tekst, #screen-bad-end .resultat-tekst, #screen-mid-end-ignore .resultat-tekst, #screen-mid-end-escape .resultat-tekst {
     width: 100%;
